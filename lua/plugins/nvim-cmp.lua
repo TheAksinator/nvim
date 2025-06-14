@@ -19,7 +19,7 @@ return {
             },
             mapping = cmp.mapping.preset.insert({
                 -- Enter key to confirm completion
-                ['<Tab>'] = cmp.mapping.confirm({ select = false }),
+                ['<Tab>'] = cmp.mapping.confirm({ select = true }),
 
                 -- Ctrl+Space to trigger completion menu
                 ['<C-Space>'] = cmp.mapping.complete(),
