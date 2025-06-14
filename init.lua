@@ -22,6 +22,13 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 	end
 })
 
+-- Tell Neovim that files ending in .sage use the python filetype
+vim.filetype.add({
+  extension = {
+    sage = "python",   -- *.sage → :set filetype=python
+  },
+})
+
 -- LAZY.NVIM
 
 -- install-path for lazy.nvim

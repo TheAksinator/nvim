@@ -58,7 +58,6 @@ return {
 
             for _, keybind in ipairs(keybinds) do
                 local action = string.format("<cmd>lua %s<cr>", tostring(keybind[2]))
-                vim.notify(action, "info")
                 vim.api.nvim_buf_set_keymap(bufnr, 'n', keybind[1], action, { desc=keybind["desc"] })
             end
         end
